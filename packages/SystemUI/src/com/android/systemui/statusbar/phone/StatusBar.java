@@ -4173,19 +4173,6 @@ public class StatusBar extends SystemUI implements DemoMode,
                         == Configuration.UI_MODE_NIGHT_YES;
             useDarkTheme = nightModeWantsDarkTheme;
             useBlackTheme = false;
-        } else if (userThemeSetting == 2) {
-            wallpaperWantsDarkTheme = true;
-            nightModeWantsDarkTheme = true;
-            useDarkTheme = true;
-        } else if (userThemeSetting == 1) {
-            // this is force white , so uhh force white
-            wallpaperWantsDarkTheme = false;
-            nightModeWantsDarkTheme = fales;
-            useDarkTheme = false; 
-        } else if (userThemeSetting == 3) {
-            wallpaperWantsDarkTheme = true;
-            useBlackTheme = true;
-            useDarkTheme = wallpaperWantsDarkTheme;
         } else {
             useDarkTheme = userThemeSetting == 2;
             useBlackTheme = userThemeSetting == 3;
