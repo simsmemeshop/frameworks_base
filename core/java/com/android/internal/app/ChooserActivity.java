@@ -1329,7 +1329,7 @@ public class ChooserActivity extends ResolverActivity {
 
             if (startType == ChooserListAdapter.TARGET_SERVICE) {
                 holder.row.setBackgroundColor(
-                        getColor(R.color.chooser_service_row_background_color_exposed));
+                        getColor(R.color.chooser_service_row_background_color));
                 int nextStartType = mChooserListAdapter.getPositionTargetType(
                         getFirstRowPosition(rowPosition + 1));
                 int serviceSpacing = holder.row.getContext().getResources()
